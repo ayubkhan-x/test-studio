@@ -1,0 +1,131 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$font: 'Lato', sans-serif;
+
+// Colors
+$main: #fff;
+$main-second: #999999;
+$main-third: #00D6B4;
+
+// Background Colors
+$first-bg: #222222;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+
+.page__one {
+    background-image: url('../img/bg/first-bg.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page__two {
+    background-color: $first-bg;
+    width: 100%;
+    height: auto;
+}
+
+// Header
+.heading {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+
+    &__logo {
+        color: $main;
+        font-size: 24px;
+    }
+
+    &__menu-ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        &_link {
+            color: $main-second;
+        }
+    }
+}
+
+// Info
+.info {
+    margin-top: 160px;
+    text-align: center;
+
+    &__title {
+        width: 465px;
+        font-size: 48px;
+        color: $main;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        margin-top: 40px;
+        width: 137px;
+        height: 39px;
+        border-radius: 3px;
+        background: transparent;
+        border: 1px solid $main-third;
+        color: $main-third;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+}
+
+.works {
+    padding-top: 50px;
+        
+    &__title {
+        color: $main;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    &__img {
+        margin-top: 33px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 22px;
+        justify-items: center;
+    }
+
+    &__footer {
+        margin-top: 136px;
+        padding-bottom: 37px;
+        text-align: center;
+
+        &_title {
+            font-size: 18px;
+            color: #C2C2C2;
+        }
+        &_text {
+            color: $main-second;
+            font-size: 12px;
+        }
+    }
+}
